@@ -1,0 +1,63 @@
+
+#firstGift {
+    color: black;
+    text-decoration: none;
+}
+#suchsel {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-container {
+    position: relative;
+    width: fit-content; /* Adjust to fit your image */
+}
+
+.image-container img {
+    display: block; /* Prevents space below the image */
+}
+
+.overlay-box {
+    position: absolute;
+    top: 240px; /* Distance from the top of the image */
+    left: -85px; /* Distance from the left of the image */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+    width: 680px;
+    height: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.overlay-box:active {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#manyGifts {
+    width: 400px;
+}
+
+#fakeGift {
+    position: absolute;
+    top: 280px;
+    left: 280px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+}
+
+#giftsContainer {
+    position: absolute;
+}
+#giftsContainerFooter {
+    position: absolute;
+    top: 550px;
+    width: 400px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+#raetselGift {
+    width: 200px;
+}

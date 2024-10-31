@@ -1,0 +1,41 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="gifts.js"></script>
+</head>
+<body onload="onLoad()">
+    <h1>Geburtstags Rallye</h1>
+    <h2><a href="searchBar()">Finde</a> die <a id="firstGift" href="#" onclick="giftFound(); lockFirstGift()">Geschenke</a>!</h2>
+    <form action="javascript:;" onsubmit=" search() ">
+        <input type="text" id="search">
+        <button type="submit">Suchen</button>
+    </form>
+    <p>Diese sind überall auf der Seite versteckt. Insgesamt gibt es 10.<br>
+        Viel Spaß beim suchen!
+    </p>
+    
+    <h1><a href="#" onclick="resetCookie()">Reset</a></h1>
+    
+    <div id="progress">
+        <h2>Hier siehst du eine Übersicht über alle gefundenen Geschenke:</h2>
+        <h3>Gefunden:</h3>
+        <h1 id="found">0</h1>
+        <h3>Übrig:</h3>
+        <h1 id="left">10</h1>
+    </div> 
+    <h1 id="finished"></h1>
+    <div id="suchselContainer" class="image-container">
+        <img id="suchsel" src="suchsel.png" alt="suchsel">
+        <div id="suchselWord" class="overlay-box" onclick="lock('suchselContainer'); giftFound()"></div>
+    </div>
+    <div id="giftsContainer" class="image-container">
+        <img id="manyGifts" src="geschenke.jpg" alt="Geschenke">
+        <div id="fakeGift" onclick="fakeGift()"></div>
+        <div id="giftsContainerFooter"></div>
+    </div>
+    <img id="raetselGift" src="geschenk.jpg" alt="Geschenk" onclick="lock('raetselGift'); giftFound()">
+</body>
+</html>
